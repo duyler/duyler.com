@@ -1,0 +1,14 @@
+{% extends "layouts/main.twig" %}
+
+{% block title %}
+    {% set pageTitle = 'Ошибка на сервере' %}
+{% endblock %}
+
+{% block content %}
+<div class="general-error">
+    <p class="text-light">
+        На стороне сервера произошла ошибка. Мы о ней знаем, и уже исправляем.<br>Вернуться на <a href="/">Главную</a>
+    </p>
+</div>
+
+{% endblock %}

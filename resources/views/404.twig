@@ -1,0 +1,11 @@
+{% extends "layouts/main.twig" %}
+
+{% block title %}
+    {% set pageTitle = 'Страница не существует или не найдена' %}
+{% endblock %}
+
+{% block content %}
+  <p class="general-error__text">
+        Страница не существует или не&nbsp;найдена.<br>Вернуться на <a href="/">Главную</a>
+  </p>
+{% endblock %}

@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "${APP_DOCKER_HOST_PORT}:80"
+    volumes:
+      - .:/var/www
+      - ./docker/config/nginx:/etc/nginx/conf.d
+      - ./docker/logs/nginx:/var/log/nginx
+    links:
+      - php
+
+  cli:
+    build:
+      context: ./
+      dockerfile: ./docker/php-cli/Dockerfile
+    volumes:
+      - .:/var/www
+      - ./docker/config/php:/usr/local/etc/php
+
+  php:
+    build:
+      context: ./
+      dockerfile: ./docker/php-fpm/Dockerfile
+    ports:
+      - 9000:9000
+    volumes:
+      - .:/var/www
+      - ./docker/config/php:/usr/local/etc/php
+    environment:
+      - PHP_IDE_CONFIG=${PHP_IDE_CONFIG}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: always
+    depends_on:
+      - cli

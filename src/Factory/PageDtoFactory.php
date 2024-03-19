@@ -14,8 +14,8 @@ readonly class PageDtoFactory
     public function __invoke(ServerRequestInterface $request, CurrentRoute $currentRoute): PageDto
     {
         return new PageDto(
-            page: $request->getAttribute('page') ?? throw new RuntimeException(),
-            lang: $currentRoute->language ?? throw new RuntimeException(),
+            page: $request->getAttribute('page') ?? throw new RuntimeException('Page not resolved'),
+            lang: $currentRoute->language ?? throw new RuntimeException('Language not set'),
         );
     }
 }

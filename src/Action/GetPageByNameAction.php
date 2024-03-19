@@ -10,7 +10,6 @@ use App\Dto\PageDto;
 use Duyler\Http\Exception\NotFoundHttpException;
 use Fiber;
 use League\CommonMark\MarkdownConverter;
-use League\CommonMark\Output\RenderedContentInterface;
 
 class GetPageByNameAction
 {
@@ -27,13 +26,13 @@ class GetPageByNameAction
             throw new NotFoundHttpException();
         }
 
-        $html = Fiber::suspend(
-            function () use ($file): RenderedContentInterface {
-                $markdown = file_get_contents($file);
-                return $this->markdownConverter->convert($markdown);
-            }
+        $converter = $this->markdownConverter;
+
+        $markdown = Fiber::suspend(
+            fn(): string => file_get_contents($file)
         );
 
+        $html = $converter->convert($markdown);
         $segments = $pageDto->page;
 
         return new Page(

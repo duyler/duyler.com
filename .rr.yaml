@@ -7,3 +7,18 @@ http:
   middleware: [ "static" ]
   static:
     dir: public
+
+  ssl:
+    redirect: true
+
+    # custom https port (default 443)
+    port: 443
+
+    # ssl cert
+    cert: server.crt
+
+    # ssl private key
+    key: server.key
+
+    # rootCA certificate path
+    rootCa: root.crt

@@ -8,6 +8,14 @@ http:
   static:
     dir: public
 
+  # HTTP service provides HTTP2 transport
+  http2:
+    # enable HTTP/2, only with TSL, enabled by default
+    enabled: true
+
+    # max transfer channels, default 128
+    maxConcurrentStreams: 128
+
   ssl:
     redirect: true
 

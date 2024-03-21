@@ -8,25 +8,9 @@ http:
   static:
     dir: public
 
-  # HTTP service provides HTTP2 transport
-  http2:
-    # enable HTTP/2, only with TSL, enabled by default
-    enabled: true
-
-    # max transfer channels, default 128
-    maxConcurrentStreams: 128
-
   ssl:
+    address: '0.0.0.0:443'
     redirect: true
-
-    # custom https port (default 443)
-    port: 443
-
-    # ssl cert
     cert: server.crt
-
-    # ssl private key
     key: server.key
-
-    # rootCA certificate path
-    rootCa: root.crt
+    root_ca: root.crt

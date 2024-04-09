@@ -37,12 +37,30 @@ return [
             new MenuItem(
                 name: 'Get Started',
                 id: 'get-started',
-                icon: 'bi bi-book',
             ),
             new MenuItem(
                 name: 'Architecture',
                 id: 'architecture',
-                icon: 'bi bi-stack',
+            ),
+            new MenuItem(
+                name: 'Actions',
+                id: 'actions',
+            ),
+            new MenuItem(
+                name: 'Attributes',
+                id: 'attributes',
+            ),
+            new MenuItem(
+                name: 'Controllers',
+                id: 'controllers',
+            ),
+            new MenuItem(
+                name: 'State handling',
+                id: 'state-handling',
+            ),
+            new MenuItem(
+                name: 'AOP',
+                id: 'aop',
             ),
         ],
     ],

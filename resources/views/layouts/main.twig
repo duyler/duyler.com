@@ -81,7 +81,6 @@
         {% for item in guideMenu.items %}
             <li class="nav-item">
                 <a class="nav-link {% if page.id != item.id %}collapsed{% endif %}" href="/{{ page.language }}/guide/{{ item.id }}">
-                    <i class="{{ item.icon }}"></i>
                     <span>{{ item.name }}</span>
                 </a>
             </li>

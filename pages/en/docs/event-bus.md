@@ -52,7 +52,7 @@ Each state can be handled using state handlers. For each state type, there is a 
 
 `bool $lock` - If an action uses parallel execution within `Fiber::suspend()` (eg Parallel php extension), this ensures that the repeated actions are executed in sequence.
 
-`bool $private` - If set to true, this action MUST NOT be required in other actions.
+`bool $private` - If set to true, this action CANNOT be required in other actions.
 
 `array $sealed` - An array of action IDs that are allowed to request this action and receive its result.
 

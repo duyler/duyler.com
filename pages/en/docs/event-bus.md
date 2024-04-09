@@ -62,4 +62,4 @@ Each state can be handled using state handlers. For each state type, there is a 
 
 `int $retries` - Number of retries if the action returns a result with ResultStatus:Fail.
 
-`int $labels` - Any arbitrary data. Can be useful when implementing state handlers.
+`array $labels` - Any arbitrary data. Can be useful when implementing state handlers.

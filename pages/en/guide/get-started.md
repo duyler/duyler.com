@@ -3,7 +3,7 @@
 ### What is Duyler?
 
 Duyler is a framework for creating feature-rich, high-performance applications in PHP.
-The scope of Duyler is very extensive: console applications, web applications, workers, testing tools and much more. All this is available in Duyler right now. All you need to do is install Duyler, launch Duyler and start thinking like Duyler!
+The scope of Duyler is very extensive: console applications, web applications, workers, testing tools and much more. All this can be effectively implemented using "Duyler" right now. All you need to do is install Duyler, launch Duyler and start thinking like Duyler!
 
 ### Installation
 

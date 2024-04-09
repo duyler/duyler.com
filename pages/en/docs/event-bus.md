@@ -34,9 +34,9 @@ Each state can be handled using state handlers. For each state type, there is a 
 
 `?string $triggeredOn` - The action will be launched after a trigger with the specified ID is sent to the bus.
 
-`array $bind` - An array of interface mappings for a DI container. For example: `[MyInterface::class => MyClass::class]`. See https://github.com/duyler/dependency-injection.
+`array $bind` - An array of interface mappings for a DI container. For example: `[MyInterface::class => MyClass::class]`. See [DI](https://github.com/duyler/dependency-injection).
 
-`array $providers` An array of service providers for the DI container. See https://github.com/duyler/dependency-injection.
+`array $providers` An array of service providers for the DI container. See [DI](https://github.com/duyler/dependency-injection).
 
 `?string $argument` - Action argument type.
 

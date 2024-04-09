@@ -34,9 +34,9 @@
 
 `?string $triggeredOn` - Действие будет запущено после того как триггер с указанным ID будет передан в шину.
 
-`array $bind` - Массив маппинга интерфейсов для DI-контейнера. Например: `[MyInterface::class => MyClass::class]`. См. https://github.com/duyler/dependency-injection.
+`array $bind` - Массив маппинга интерфейсов для DI-контейнера. Например: `[MyInterface::class => MyClass::class]`. См. [DI](https://github.com/duyler/dependency-injection).
 
-`array $providers` Массив сервис-провайдеров для DI-контейнера. См. https://github.com/duyler/dependency-injection.
+`array $providers` Массив сервис-провайдеров для DI-контейнера. См. [DI](https://github.com/duyler/dependency-injection).
 
 `?string $argument` - Тип аргумента действия.
 

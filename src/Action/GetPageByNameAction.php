@@ -26,13 +26,11 @@ class GetPageByNameAction
             throw new NotFoundHttpException();
         }
 
-        $converter = $this->markdownConverter;
-
         $markdown = Fiber::suspend(
             fn(): string => file_get_contents($file)
         );
 
-        $html = $converter->convert($markdown);
+        $html = $this->markdownConverter->convert($markdown);
         $segments = $pageDto->page;
 
         return new Page(

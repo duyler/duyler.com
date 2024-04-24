@@ -39,10 +39,6 @@ return [
                 id: 'get-started',
             ),
             new MenuItem(
-                name: 'Architecture',
-                id: 'architecture',
-            ),
-            new MenuItem(
                 name: 'Actions',
                 id: 'actions',
             ),

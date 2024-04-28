@@ -9,10 +9,10 @@ http:
   static:
     dir: public
 
-  ssl:
-    address: 0.0.0.0:443
-    redirect: true
-    cert: server.crt
-    key: server.key
-    root_ca: root.crt
-    client_auth_type: no_client_certs
+#  ssl:
+#    address: 0.0.0.0:443
+#    redirect: true
+#    cert: server.crt
+#    key: server.key
+#    root_ca: root.crt
+#    client_auth_type: no_client_certs

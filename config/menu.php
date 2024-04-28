@@ -16,8 +16,8 @@ return [
     ComponentMenu::class => [
         'items' => [
             new MenuItem(
-                name: 'Event Bus',
-                id: 'event-bus',
+                name: 'Action Bus',
+                id: 'action-bus',
                 icon: 'bi bi-arrow-repeat',
             ),
             new MenuItem(
@@ -63,7 +63,7 @@ return [
     GetComponentInfoAction::class => [
         'componentInfoList' => [
             'event-bus' => new ComponentInfo(
-                'https://github.com/duyler/event-bus'
+                'https://github.com/duyler/action-bus'
             )
         ],
     ],

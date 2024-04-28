@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
+use Duyler\ActionBus\BusConfig;
+use Duyler\ActionBus\Enum\ResetMode;
 use Duyler\Config\FileConfig;
-use Duyler\EventBus\BusConfig;
-use Duyler\EventBus\Enum\ResetMode;
 
 /**
  * @var FileConfig $config

@@ -82,6 +82,59 @@
             "time": "2022-10-27T11:44:00+00:00"
         },
         {
+            "name": "duyler/action-bus",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/duyler/action-bus.git",
+                "reference": "1a89d234c94b5a4781c784f499ecdb4746453432"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/duyler/action-bus/zipball/1a89d234c94b5a4781c784f499ecdb4746453432",
+                "reference": "1a89d234c94b5a4781c784f499ecdb4746453432",
+                "shasum": ""
+            },
+            "require": {
+                "duyler/dependency-injection": "dev-main",
+                "php": "^8.3",
+                "psr/event-dispatcher": "^1.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.30",
+                "phpunit/phpunit": "^10.0",
+                "squizlabs/php_codesniffer": "^4.0",
+                "vimeo/psalm": "^5.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Duyler\\ActionBus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikhail Ilinsky",
+                    "email": "mail@milinsky.ru"
+                }
+            ],
+            "description": "Duyler action bus",
+            "keywords": [
+                "action-bus"
+            ],
+            "support": {
+                "docs": "https://duyler.org/docs/action-bus/",
+                "issues": "https://github.com/duyler/action-bus/issues",
+                "source": "https://github.com/duyler/action-bus/tree/main"
+            },
+            "time": "2024-04-28T14:14:56+00:00"
+        },
+        {
             "name": "duyler/config",
             "version": "dev-main",
             "source": {
@@ -136,12 +189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/dependency-injection.git",
-                "reference": "904ebe83ac370b4affd4b222866ef4d4ccc28229"
+                "reference": "2168df3ea36f63adf5a2b9e56beb92c19309eece"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/dependency-injection/zipball/904ebe83ac370b4affd4b222866ef4d4ccc28229",
-                "reference": "904ebe83ac370b4affd4b222866ef4d4ccc28229",
+                "url": "https://api.github.com/repos/duyler/dependency-injection/zipball/2168df3ea36f63adf5a2b9e56beb92c19309eece",
+                "reference": "2168df3ea36f63adf5a2b9e56beb92c19309eece",
                 "shasum": ""
             },
             "require": {
@@ -178,60 +231,7 @@
                 "issues": "https://github.com/duyler/dependency-injection/issues",
                 "source": "https://github.com/duyler/dependency-injection/tree/main"
             },
-            "time": "2024-03-10T10:30:38+00:00"
-        },
-        {
-            "name": "duyler/event-bus",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/duyler/event-bus.git",
-                "reference": "76aaa467b81595310b3ae03b7c6bc9e1486a4dde"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/duyler/event-bus/zipball/76aaa467b81595310b3ae03b7c6bc9e1486a4dde",
-                "reference": "76aaa467b81595310b3ae03b7c6bc9e1486a4dde",
-                "shasum": ""
-            },
-            "require": {
-                "duyler/dependency-injection": "dev-main",
-                "php": "^8.3",
-                "psr/event-dispatcher": "^1.0.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.30",
-                "phpunit/phpunit": "^10.0",
-                "squizlabs/php_codesniffer": "^4.0",
-                "vimeo/psalm": "^5.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Duyler\\EventBus\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mikhail Ilinsky",
-                    "email": "mail@milinsky.ru"
-                }
-            ],
-            "description": "Duyler event bus",
-            "keywords": [
-                "event-bus"
-            ],
-            "support": {
-                "docs": "https://duyler.org/docs/event-bus/",
-                "issues": "https://github.com/duyler/event-bus/issues",
-                "source": "https://github.com/duyler/event-bus/tree/main"
-            },
-            "time": "2024-04-11T01:58:03+00:00"
+            "time": "2024-04-28T14:45:39+00:00"
         },
         {
             "name": "duyler/framework",
@@ -239,18 +239,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/framework.git",
-                "reference": "5bbb799813b81957fe33daf19895f060a7d1027c"
+                "reference": "6f855c978c64134b82e998999685e3e09a379292"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/framework/zipball/5bbb799813b81957fe33daf19895f060a7d1027c",
-                "reference": "5bbb799813b81957fe33daf19895f060a7d1027c",
+                "url": "https://api.github.com/repos/duyler/framework/zipball/6f855c978c64134b82e998999685e3e09a379292",
+                "reference": "6f855c978c64134b82e998999685e3e09a379292",
                 "shasum": ""
             },
             "require": {
+                "duyler/action-bus": "dev-main",
                 "duyler/config": "dev-main",
                 "duyler/dependency-injection": "dev-main",
-                "duyler/event-bus": "dev-main",
                 "php": "^8.3",
                 "vlucas/phpdotenv": "^v5.6"
             },
@@ -284,7 +284,7 @@
                 "issues": "https://github.com/duyler/framework/issues",
                 "source": "https://github.com/duyler/framework/tree/main"
             },
-            "time": "2024-04-03T19:08:45+00:00"
+            "time": "2024-04-28T14:41:02+00:00"
         },
         {
             "name": "duyler/http",
@@ -292,16 +292,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/http.git",
-                "reference": "431d4e5bd4c3464d0fb1700f2e533e7407ae40df"
+                "reference": "55a877385005206d0101817bdfbf28d0fcb6ff59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/http/zipball/431d4e5bd4c3464d0fb1700f2e533e7407ae40df",
-                "reference": "431d4e5bd4c3464d0fb1700f2e533e7407ae40df",
+                "url": "https://api.github.com/repos/duyler/http/zipball/55a877385005206d0101817bdfbf28d0fcb6ff59",
+                "reference": "55a877385005206d0101817bdfbf28d0fcb6ff59",
                 "shasum": ""
             },
             "require": {
+                "duyler/action-bus": "dev-main",
                 "duyler/config": "dev-main",
+                "duyler/framework": "dev-main",
                 "duyler/router": "dev-main",
                 "httpsoft/http-response": "^1.1",
                 "httpsoft/http-server-request": "^1.1",
@@ -334,7 +336,7 @@
                 "issues": "https://github.com/duyler/http/issues",
                 "source": "https://github.com/duyler/http/tree/main"
             },
-            "time": "2024-03-18T06:13:16+00:00"
+            "time": "2024-04-28T14:29:25+00:00"
         },
         {
             "name": "duyler/router",
@@ -442,15 +444,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/web.git",
-                "reference": "0f52998005efb1cf83290fdfac9157de0003a564"
+                "reference": "c0233bdc777a69026307156fce8810b83dbfe40a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/web/zipball/0f52998005efb1cf83290fdfac9157de0003a564",
-                "reference": "0f52998005efb1cf83290fdfac9157de0003a564",
+                "url": "https://api.github.com/repos/duyler/web/zipball/c0233bdc777a69026307156fce8810b83dbfe40a",
+                "reference": "c0233bdc777a69026307156fce8810b83dbfe40a",
                 "shasum": ""
             },
             "require": {
+                "duyler/action-bus": "dev-main",
                 "duyler/framework": "dev-main",
                 "duyler/http": "dev-main",
                 "duyler/twig-wrapper": "dev-main",
@@ -486,7 +489,7 @@
                 "issues": "https://github.com/duyler/web/issues",
                 "source": "https://github.com/duyler/web/tree/main"
             },
-            "time": "2024-03-18T06:19:06+00:00"
+            "time": "2024-04-28T14:34:50+00:00"
         },
         {
             "name": "evenement/evenement",
@@ -2232,16 +2235,16 @@
         },
         {
             "name": "roadrunner-php/roadrunner-api-dto",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roadrunner-php/roadrunner-api-dto.git",
-                "reference": "c4536eff3177e041e0d1231fc18d6ab5685f37d4"
+                "reference": "d46b24f8b51ca0bca36aa74df60822f024d8c6dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roadrunner-php/roadrunner-api-dto/zipball/c4536eff3177e041e0d1231fc18d6ab5685f37d4",
-                "reference": "c4536eff3177e041e0d1231fc18d6ab5685f37d4",
+                "url": "https://api.github.com/repos/roadrunner-php/roadrunner-api-dto/zipball/d46b24f8b51ca0bca36aa74df60822f024d8c6dd",
+                "reference": "d46b24f8b51ca0bca36aa74df60822f024d8c6dd",
                 "shasum": ""
             },
             "require": {
@@ -2249,7 +2252,7 @@
                 "php": "^8.1"
             },
             "conflict": {
-                "temporal/sdk": "<2.6.0"
+                "temporal/sdk": "<2.9.0"
             },
             "suggest": {
                 "google/common-protos": "Required for Temporal API"
@@ -2287,7 +2290,7 @@
                 "docs": "https://docs.roadrunner.dev",
                 "forum": "https://forum.roadrunner.dev",
                 "issues": "https://github.com/roadrunner-server/roadrunner/issues",
-                "source": "https://github.com/roadrunner-php/roadrunner-api-dto/tree/v1.6.0"
+                "source": "https://github.com/roadrunner-php/roadrunner-api-dto/tree/v1.7.0"
             },
             "funding": [
                 {
@@ -2295,7 +2298,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-29T08:15:12+00:00"
+            "time": "2024-04-11T14:08:46+00:00"
         },
         {
             "name": "scrivo/highlight.php",
@@ -2431,23 +2434,23 @@
         },
         {
             "name": "spiral/goridge",
-            "version": "4.1.1",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roadrunner-php/goridge.git",
-                "reference": "a5d67441dc862aa32647622975c9e6f6042a593d"
+                "reference": "c6696bd1834f5e88d1252a953a1336c041795411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roadrunner-php/goridge/zipball/a5d67441dc862aa32647622975c9e6f6042a593d",
-                "reference": "a5d67441dc862aa32647622975c9e6f6042a593d",
+                "url": "https://api.github.com/repos/roadrunner-php/goridge/zipball/c6696bd1834f5e88d1252a953a1336c041795411",
+                "reference": "c6696bd1834f5e88d1252a953a1336c041795411",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-sockets": "*",
                 "php": ">=8.1",
-                "spiral/roadrunner": "^2023"
+                "spiral/roadrunner": "^2023 || ^2024.1"
             },
             "require-dev": {
                 "google/protobuf": "^3.22",
@@ -2503,10 +2506,10 @@
             "homepage": "https://spiral.dev/",
             "support": {
                 "chat": "https://discord.gg/V6EK4he",
-                "docs": "https://roadrunner.dev/docs",
+                "docs": "https://docs.roadrunner.dev",
                 "forum": "https://forum.roadrunner.dev/",
                 "issues": "https://github.com/roadrunner-server/roadrunner/issues",
-                "source": "https://github.com/roadrunner-php/goridge/tree/4.1.1"
+                "source": "https://github.com/roadrunner-php/goridge/tree/v4.2.0"
             },
             "funding": [
                 {
@@ -2514,20 +2517,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-21T10:47:02+00:00"
+            "time": "2024-04-11T17:26:14+00:00"
         },
         {
             "name": "spiral/roadrunner",
-            "version": "v2023.3.12",
+            "version": "v2024.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roadrunner-server/roadrunner.git",
-                "reference": "9b5b65e00c6de7327142a8d689646f950fe00788"
+                "reference": "c0d3df2b33bc2a9e9726dbbd73d7fe125ab9d045"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roadrunner-server/roadrunner/zipball/9b5b65e00c6de7327142a8d689646f950fe00788",
-                "reference": "9b5b65e00c6de7327142a8d689646f950fe00788",
+                "url": "https://api.github.com/repos/roadrunner-server/roadrunner/zipball/c0d3df2b33bc2a9e9726dbbd73d7fe125ab9d045",
+                "reference": "c0d3df2b33bc2a9e9726dbbd73d7fe125ab9d045",
                 "shasum": ""
             },
             "type": "metapackage",
@@ -2556,7 +2559,7 @@
                 "docs": "https://roadrunner.dev/docs",
                 "forum": "https://forum.roadrunner.dev/",
                 "issues": "https://github.com/roadrunner-server/roadrunner/issues",
-                "source": "https://github.com/roadrunner-server/roadrunner/tree/v2023.3.12"
+                "source": "https://github.com/roadrunner-server/roadrunner/tree/v2024.1.0"
             },
             "funding": [
                 {
@@ -2564,20 +2567,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-29T18:16:45+00:00"
+            "time": "2024-04-11T16:32:14+00:00"
         },
         {
             "name": "spiral/roadrunner-http",
-            "version": "v3.5.0",
+            "version": "v3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roadrunner-php/http.git",
-                "reference": "f5c329b3bce485fbc7080bef1d37ff130985de50"
+                "reference": "213cd0d5c0fba1548f22a5f5ff333afa88fe24ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roadrunner-php/http/zipball/f5c329b3bce485fbc7080bef1d37ff130985de50",
-                "reference": "f5c329b3bce485fbc7080bef1d37ff130985de50",
+                "url": "https://api.github.com/repos/roadrunner-php/http/zipball/213cd0d5c0fba1548f22a5f5ff333afa88fe24ae",
+                "reference": "213cd0d5c0fba1548f22a5f5ff333afa88fe24ae",
                 "shasum": ""
             },
             "require": {
@@ -2644,7 +2647,7 @@
                 "docs": "https://docs.roadrunner.dev",
                 "forum": "https://forum.roadrunner.dev/",
                 "issues": "https://github.com/roadrunner-server/roadrunner/issues",
-                "source": "https://github.com/roadrunner-php/http/tree/v3.5.0"
+                "source": "https://github.com/roadrunner-php/http/tree/v3.5.1"
             },
             "funding": [
                 {
@@ -2652,7 +2655,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-01T17:33:48+00:00"
+            "time": "2024-04-26T11:16:10+00:00"
         },
         {
             "name": "spiral/roadrunner-worker",
@@ -3641,16 +3644,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.53.0",
+            "version": "v3.54.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "69a19093a9ded8d1baac62ed6c009b8bc148d008"
+                "reference": "2aecbc8640d7906c38777b3dcab6f4ca79004d08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/69a19093a9ded8d1baac62ed6c009b8bc148d008",
-                "reference": "69a19093a9ded8d1baac62ed6c009b8bc148d008",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/2aecbc8640d7906c38777b3dcab6f4ca79004d08",
+                "reference": "2aecbc8640d7906c38777b3dcab6f4ca79004d08",
                 "shasum": ""
             },
             "require": {
@@ -3722,7 +3725,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.53.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.54.0"
             },
             "funding": [
                 {
@@ -3730,7 +3733,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-08T15:03:00+00:00"
+            "time": "2024-04-17T08:12:13+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -4290,16 +4293,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.17",
+            "version": "10.5.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c1f736a473d21957ead7e94fcc029f571895abf5"
+                "reference": "547d314dc24ec1e177720d45c6263fb226cc2ae3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c1f736a473d21957ead7e94fcc029f571895abf5",
-                "reference": "c1f736a473d21957ead7e94fcc029f571895abf5",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/547d314dc24ec1e177720d45c6263fb226cc2ae3",
+                "reference": "547d314dc24ec1e177720d45c6263fb226cc2ae3",
                 "shasum": ""
             },
             "require": {
@@ -4371,7 +4374,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.17"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.20"
             },
             "funding": [
                 {
@@ -4387,7 +4390,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-05T04:39:01+00:00"
+            "time": "2024-04-24T06:32:35+00:00"
         },
         {
             "name": "sebastian/cli-parser",

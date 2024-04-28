@@ -14,6 +14,7 @@ use App\Dto\PageDto;
 use App\Factory\PageDtoFactory;
 use App\Provider\MarkdownConverterEnvironmentProvider;
 use Duyler\Framework\Build\Action\Action;
+use Duyler\Http\Http;
 use Duyler\Web\Build\Attribute\Route;
 use Duyler\Web\Build\Attribute\View;
 use Duyler\Web\Enum\Method;
@@ -33,7 +34,7 @@ Action::build(id: 'Duyler.SayHello', handler: function () {})
     );
 
 Action::build(id: 'Page.GetPageByName', handler: GetPageByNameAction::class)
-    ->require('Http.CreateRequest', 'Http.StartRouting')
+    ->require(Http::GetRequest, Http::GetRoute)
     ->bind([EnvironmentInterface::class => Environment::class])
     ->providers([Environment::class => MarkdownConverterEnvironmentProvider::class])
     ->externalAccess(true)

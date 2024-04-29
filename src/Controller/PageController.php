@@ -14,9 +14,9 @@ use Psr\Http\Message\ResponseInterface;
 class PageController extends AbstractController
 {
     public function __invoke(
-        Content       $page,
+        Content $page,
         ComponentMenu $componentMenu,
-        GuideMenu     $guideMenu,
+        GuideMenu $guideMenu,
         ComponentInfo $componentInfo,
     ): ResponseInterface {
         return $this->render('docs.page', [

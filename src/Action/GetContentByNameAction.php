@@ -15,7 +15,7 @@ class GetContentByNameAction
 {
     public function __construct(
         private GetContentByNameActionConfig $actionConfig,
-        private MarkdownConverter            $markdownConverter,
+        private MarkdownConverter $markdownConverter,
     ) {}
 
     public function __invoke(ContentDto $pageDto): Content
@@ -27,7 +27,7 @@ class GetContentByNameAction
         }
 
         $markdown = Fiber::suspend(
-            fn(): string => file_get_contents($file)
+            fn(): string => file_get_contents($file),
         );
 
         $html = $this->markdownConverter->convert($markdown);
@@ -37,7 +37,7 @@ class GetContentByNameAction
             content: $html->getContent(),
             id: array_pop($segments),
             language: $pageDto->lang,
-            category: implode('/', $segments)
+            category: implode('/', $segments),
         );
     }
 }

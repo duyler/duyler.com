@@ -8,6 +8,6 @@ class GuideMenu
 {
     public function __construct(
         /** @var MenuItem[] */
-        public array $items
+        public array $items,
     ) {}
 }

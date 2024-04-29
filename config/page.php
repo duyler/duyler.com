@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Config\GetPageByNameActionConfig;
+use App\Config\GetContentByNameActionConfig;
 use App\Config\MarkdownConverterConfig;
 use Duyler\Config\FileConfig;
 
@@ -10,7 +10,7 @@ use Duyler\Config\FileConfig;
  * @var FileConfig $config
  */
 return [
-    GetPageByNameActionConfig::class => [
+    GetContentByNameActionConfig::class => [
         'pagesDirPath' => $config->env('PROJECT_ROOT') . 'pages',
     ],
     MarkdownConverterConfig::class => [

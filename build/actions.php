@@ -11,8 +11,8 @@ use App\Contract\ComponentInfo;
 use App\Contract\ComponentMenu;
 use App\Contract\GuideMenu;
 use App\Contract\Content;
-use App\Dto\PageDto;
-use App\Factory\PageDtoFactory;
+use App\Dto\ContentDto;
+use App\Factory\ContentDtoFactory;
 use App\Provider\MarkdownConverterEnvironmentProvider;
 use Duyler\Framework\Build\Action\Action;
 use Duyler\Http\Http;
@@ -40,8 +40,8 @@ Action::build(id: Page::GetContentByName, handler: GetContentByNameAction::class
     ->providers([Environment::class => MarkdownConverterEnvironmentProvider::class])
     ->externalAccess(true)
     ->contract(Content::class)
-    ->argument(PageDto::class)
-    ->argumentFactory(PageDtoFactory::class);
+    ->argument(ContentDto::class)
+    ->argumentFactory(ContentDtoFactory::class);
 
 Action::build(id: Page::GetComponentMenu, handler: GetComponentMenuAction::class)
     ->externalAccess(true)

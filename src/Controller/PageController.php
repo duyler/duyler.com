@@ -7,16 +7,16 @@ namespace App\Controller;
 use App\Contract\ComponentInfo;
 use App\Contract\ComponentMenu;
 use App\Contract\GuideMenu;
-use App\Contract\Page;
+use App\Contract\Content;
 use Duyler\Web\AbstractController;
 use Psr\Http\Message\ResponseInterface;
 
 class PageController extends AbstractController
 {
     public function __invoke(
-        Page $page,
+        Content       $page,
         ComponentMenu $componentMenu,
-        GuideMenu $guideMenu,
+        GuideMenu     $guideMenu,
         ComponentInfo $componentInfo,
     ): ResponseInterface {
         return $this->render('docs.page', [

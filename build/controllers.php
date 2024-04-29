@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Case\Page;
 use App\Controller\PageController;
 use Duyler\Router\Enum\Type;
 use Duyler\Web\Build\Attribute\Route;
@@ -10,10 +11,10 @@ use Duyler\Web\Enum\Method;
 
 Controller::build(handler: PageController::class)
     ->actions(
-        'Page.GetComponentInfo',
-        'Page.GetPageByName',
-        'Page.GetComponentMenu',
-        'Page.GetGuideMenu',
+        Page::GetComponentInfo,
+        Page::GetContentByName,
+        Page::GetComponentMenu,
+        Page::GetGuideMenu,
     )
     ->attributes(
         new Route(

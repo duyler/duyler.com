@@ -5,11 +5,12 @@ declare(strict_types=1);
 use App\Action\GetComponentInfoAction;
 use App\Action\GetComponentMenuAction;
 use App\Action\GetGuideMenuAction;
-use App\Action\GetPageByNameAction;
+use App\Action\GetContentByNameAction;
+use App\Case\Page;
 use App\Contract\ComponentInfo;
 use App\Contract\ComponentMenu;
 use App\Contract\GuideMenu;
-use App\Contract\Page;
+use App\Contract\Content;
 use App\Dto\PageDto;
 use App\Factory\PageDtoFactory;
 use App\Provider\MarkdownConverterEnvironmentProvider;
@@ -21,7 +22,7 @@ use Duyler\Web\Enum\Method;
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Environment\EnvironmentInterface;
 
-Action::build(id: 'Duyler.SayHello', handler: function () {})
+Action::build(id: Page::SayHello, handler: function () {})
     ->externalAccess(true)
     ->attributes(
         new Route(
@@ -33,25 +34,25 @@ Action::build(id: 'Duyler.SayHello', handler: function () {})
         ),
     );
 
-Action::build(id: 'Page.GetPageByName', handler: GetPageByNameAction::class)
+Action::build(id: Page::GetContentByName, handler: GetContentByNameAction::class)
     ->require(Http::GetRequest, Http::GetRoute)
     ->bind([EnvironmentInterface::class => Environment::class])
     ->providers([Environment::class => MarkdownConverterEnvironmentProvider::class])
     ->externalAccess(true)
-    ->contract(Page::class)
+    ->contract(Content::class)
     ->argument(PageDto::class)
     ->argumentFactory(PageDtoFactory::class);
 
-Action::build(id: 'Page.GetComponentMenu', handler: GetComponentMenuAction::class)
+Action::build(id: Page::GetComponentMenu, handler: GetComponentMenuAction::class)
     ->externalAccess(true)
     ->contract(ComponentMenu::class);
 
-Action::build(id: 'Page.GetGuideMenu', handler: GetGuideMenuAction::class)
+Action::build(id: Page::GetGuideMenu, handler: GetGuideMenuAction::class)
     ->externalAccess(true)
     ->contract(GuideMenu::class);
 
-Action::build(id: 'Page.GetComponentInfo', handler: GetComponentInfoAction::class)
-    ->require('Page.GetPageByName')
+Action::build(id: Page::GetComponentInfo, handler: GetComponentInfoAction::class)
+    ->require(Page::GetContentByName)
     ->externalAccess(true)
-    ->argument(Page::class)
+    ->argument(Content::class)
     ->contract(ComponentInfo::class);

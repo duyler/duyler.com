@@ -16,6 +16,7 @@ use App\Factory\ContentDtoFactory;
 use App\Provider\MarkdownConverterEnvironmentProvider;
 use Duyler\Framework\Build\Action\Action;
 use Duyler\Http\Http;
+use Duyler\Multiprocess\Build\Attribute\Async;
 use Duyler\Web\Build\Attribute\Route;
 use Duyler\Web\Build\Attribute\View;
 use Duyler\Web\Enum\Method;
@@ -41,7 +42,10 @@ Action::build(id: Page::GetContentByName, handler: GetContentByNameAction::class
     ->externalAccess(true)
     ->contract(Content::class)
     ->argument(ContentDto::class)
-    ->argumentFactory(ContentDtoFactory::class);
+    ->argumentFactory(ContentDtoFactory::class)
+    ->attributes(
+        new Async(),
+    );
 
 Action::build(id: Page::GetComponentMenu, handler: GetComponentMenuAction::class)
     ->externalAccess(true)

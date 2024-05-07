@@ -11,7 +11,7 @@ use Duyler\Config\FileConfig;
  */
 return [
     GetContentByNameActionConfig::class => [
-        'pagesDirPath' => $config->env('PROJECT_ROOT') . 'pages',
+        'pagesDirPath' => 'https://github.com/duyler/docs/raw/main/pages',
     ],
     MarkdownConverterConfig::class => [
         'converterConfig' => [

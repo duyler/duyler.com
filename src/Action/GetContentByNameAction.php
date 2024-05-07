@@ -20,15 +20,13 @@ class GetContentByNameAction
 
     public function __invoke(ContentDto $pageDto): Content
     {
-        $file = $this->actionConfig->pagesDirPath . '/' . $pageDto->lang . '/' . implode('/', $pageDto->page) . '.md';
+        $page = $this->actionConfig->pagesDirPath . '/' . $pageDto->lang . '/' . implode('/', $pageDto->page) . '.md';
 
-        if (false === file_exists($file)) {
+        $markdown = Fiber::suspend(fn() => file_get_contents($page));
+
+        if (false === $markdown) {
             throw new NotFoundHttpException();
         }
-
-        $markdown = Fiber::suspend(
-            fn(): string => file_get_contents($file),
-        );
 
         $html = $this->markdownConverter->convert($markdown);
         $segments = $pageDto->page;

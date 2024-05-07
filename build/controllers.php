@@ -21,5 +21,5 @@ Controller::build(handler: PageController::class)
             method: Method::Get,
             pattern: '{$page}',
             where: ['page' => Type::Array],
-        )
+        ),
     );

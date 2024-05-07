@@ -63,8 +63,8 @@ return [
     GetComponentInfoAction::class => [
         'componentInfoList' => [
             'action-bus' => new ComponentInfo(
-                'https://github.com/duyler/action-bus'
-            )
+                'https://github.com/duyler/action-bus',
+            ),
         ],
     ],
 ];

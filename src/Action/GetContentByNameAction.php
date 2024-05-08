@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Action;
 
 use App\Contract\Content;
-use App\Config\GetContentByNameActionConfig;
 use App\Dto\ContentDto;
+use App\Storage\DocsStorage;
 use Duyler\Http\Exception\NotFoundHttpException;
 use Fiber;
 use League\CommonMark\MarkdownConverter;
@@ -14,27 +14,25 @@ use League\CommonMark\MarkdownConverter;
 class GetContentByNameAction
 {
     public function __construct(
-        private GetContentByNameActionConfig $actionConfig,
         private MarkdownConverter $markdownConverter,
+        private DocsStorage $docsStorage,
     ) {}
 
-    public function __invoke(ContentDto $pageDto): Content
+    public function __invoke(ContentDto $contentDto): Content
     {
-        $page = $this->actionConfig->pagesDirPath . '/' . $pageDto->lang . '/' . implode('/', $pageDto->page) . '.md';
+        $markdown = Fiber::suspend(fn() => $this->docsStorage->getPage($contentDto->getSlug()));
 
-        $markdown = Fiber::suspend(fn() => file_get_contents($page));
-
-        if (false === $markdown) {
+        if (null === $markdown) {
             throw new NotFoundHttpException();
         }
 
         $html = $this->markdownConverter->convert($markdown);
-        $segments = $pageDto->page;
+        $segments = $contentDto->page;
 
         return new Content(
             content: $html->getContent(),
             id: array_pop($segments),
-            language: $pageDto->lang,
+            language: $contentDto->lang,
             category: implode('/', $segments),
         );
     }

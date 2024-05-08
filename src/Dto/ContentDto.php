@@ -10,4 +10,9 @@ readonly class ContentDto
         public array $page,
         public string $lang,
     ) {}
+
+    public function getSlug(): string
+    {
+        return $this->lang . '/' . implode('/', $this->page);
+    }
 }

@@ -11,6 +11,7 @@ use Duyler\Config\FileConfig;
  */
 return [
     BusConfig::class => [
+        'saveStateActionContainer' => true,
         'resetMode' => ResetMode::Selective,
     ],
 ];

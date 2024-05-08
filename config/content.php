@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Config\GetContentByNameActionConfig;
+use App\Config\DocsStorageConfig;
 use App\Config\MarkdownConverterConfig;
 use Duyler\Config\FileConfig;
 
@@ -10,8 +10,8 @@ use Duyler\Config\FileConfig;
  * @var FileConfig $config
  */
 return [
-    GetContentByNameActionConfig::class => [
-        'pagesDirPath' => 'https://github.com/duyler/docs/raw/main/pages',
+    DocsStorageConfig::class => [
+        'pagesPath' => 'https://github.com/duyler/docs/raw/main/pages/',
     ],
     MarkdownConverterConfig::class => [
         'converterConfig' => [

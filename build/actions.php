@@ -42,10 +42,7 @@ Action::build(id: Page::GetContentByName, handler: GetContentByNameAction::class
     ->externalAccess(true)
     ->contract(Content::class)
     ->argument(ContentDto::class)
-    ->argumentFactory(ContentDtoFactory::class)
-    ->attributes(
-        new Async(),
-    );
+    ->argumentFactory(ContentDtoFactory::class);
 
 Action::build(id: Page::GetComponentMenu, handler: GetComponentMenuAction::class)
     ->externalAccess(true)

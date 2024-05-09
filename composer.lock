@@ -87,12 +87,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/action-bus.git",
-                "reference": "d8077d34d99bc103e1ba089cf97b426b9b8aadc9"
+                "reference": "a1603075733814af658cafa39bcc620c312af2d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/action-bus/zipball/d8077d34d99bc103e1ba089cf97b426b9b8aadc9",
-                "reference": "d8077d34d99bc103e1ba089cf97b426b9b8aadc9",
+                "url": "https://api.github.com/repos/duyler/action-bus/zipball/a1603075733814af658cafa39bcc620c312af2d9",
+                "reference": "a1603075733814af658cafa39bcc620c312af2d9",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +132,7 @@
                 "issues": "https://github.com/duyler/action-bus/issues",
                 "source": "https://github.com/duyler/action-bus/tree/main"
             },
-            "time": "2024-05-07T11:07:13+00:00"
+            "time": "2024-05-09T04:44:12+00:00"
         },
         {
             "name": "duyler/config",
@@ -189,12 +189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/dependency-injection.git",
-                "reference": "2168df3ea36f63adf5a2b9e56beb92c19309eece"
+                "reference": "d3313616ce6650ced1785432f235a4361468ecab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/dependency-injection/zipball/2168df3ea36f63adf5a2b9e56beb92c19309eece",
-                "reference": "2168df3ea36f63adf5a2b9e56beb92c19309eece",
+                "url": "https://api.github.com/repos/duyler/dependency-injection/zipball/d3313616ce6650ced1785432f235a4361468ecab",
+                "reference": "d3313616ce6650ced1785432f235a4361468ecab",
                 "shasum": ""
             },
             "require": {
@@ -231,7 +231,7 @@
                 "issues": "https://github.com/duyler/dependency-injection/issues",
                 "source": "https://github.com/duyler/dependency-injection/tree/main"
             },
-            "time": "2024-04-28T14:45:39+00:00"
+            "time": "2024-05-08T02:46:57+00:00"
         },
         {
             "name": "duyler/framework",
@@ -344,12 +344,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/multiprocess.git",
-                "reference": "421d88de366ae2787d414ae47ad189515e640015"
+                "reference": "357eb821ca8a0593f87e49af9139b5eede7ed59f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/multiprocess/zipball/421d88de366ae2787d414ae47ad189515e640015",
-                "reference": "421d88de366ae2787d414ae47ad189515e640015",
+                "url": "https://api.github.com/repos/duyler/multiprocess/zipball/357eb821ca8a0593f87e49af9139b5eede7ed59f",
+                "reference": "357eb821ca8a0593f87e49af9139b5eede7ed59f",
                 "shasum": ""
             },
             "require": {
@@ -390,7 +390,7 @@
                 "issues": "https://github.com/duyler/multiprocess/issues",
                 "source": "https://github.com/duyler/multiprocess/tree/main"
             },
-            "time": "2024-05-07T10:40:37+00:00"
+            "time": "2024-05-09T04:50:20+00:00"
         },
         {
             "name": "duyler/router",
@@ -3698,16 +3698,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.55.0",
+            "version": "v3.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "c9eeacb559bfa0bcc7f778cfb7b42715c83d2c7e"
+                "reference": "4429303e62a4ce583ddfe64ff5c34c76bcf74931"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/c9eeacb559bfa0bcc7f778cfb7b42715c83d2c7e",
-                "reference": "c9eeacb559bfa0bcc7f778cfb7b42715c83d2c7e",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/4429303e62a4ce583ddfe64ff5c34c76bcf74931",
+                "reference": "4429303e62a4ce583ddfe64ff5c34c76bcf74931",
                 "shasum": ""
             },
             "require": {
@@ -3779,7 +3779,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.55.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.56.0"
             },
             "funding": [
                 {
@@ -3787,7 +3787,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-06T00:10:15+00:00"
+            "time": "2024-05-07T15:50:05+00:00"
         },
         {
             "name": "myclabs/deep-copy",

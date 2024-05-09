@@ -25,8 +25,10 @@ class DocsStorage
 
         $page = file_get_contents($this->actionConfig->pagesPath . $slug . '.md');
 
-        $this->pages[$slug] = $page;
+        if (false === $page) {
+            return null;
+        }
 
-        return $page ?: null;
+        return $this->pages[$slug] = $page;
     }
 }

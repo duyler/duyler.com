@@ -87,12 +87,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/action-bus.git",
-                "reference": "a1603075733814af658cafa39bcc620c312af2d9"
+                "reference": "256d72bff9ce67d453c0f5b1b7950f5aa8a900e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/action-bus/zipball/a1603075733814af658cafa39bcc620c312af2d9",
-                "reference": "a1603075733814af658cafa39bcc620c312af2d9",
+                "url": "https://api.github.com/repos/duyler/action-bus/zipball/256d72bff9ce67d453c0f5b1b7950f5aa8a900e7",
+                "reference": "256d72bff9ce67d453c0f5b1b7950f5aa8a900e7",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +132,7 @@
                 "issues": "https://github.com/duyler/action-bus/issues",
                 "source": "https://github.com/duyler/action-bus/tree/main"
             },
-            "time": "2024-05-09T04:44:12+00:00"
+            "time": "2024-05-15T00:38:53+00:00"
         },
         {
             "name": "duyler/config",
@@ -239,12 +239,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/framework.git",
-                "reference": "122370f8bd98e7e7b635ed366e124a478c2154c4"
+                "reference": "490d78dc7116050fc574dde071e2fcaeb58a97e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/framework/zipball/122370f8bd98e7e7b635ed366e124a478c2154c4",
-                "reference": "122370f8bd98e7e7b635ed366e124a478c2154c4",
+                "url": "https://api.github.com/repos/duyler/framework/zipball/490d78dc7116050fc574dde071e2fcaeb58a97e0",
+                "reference": "490d78dc7116050fc574dde071e2fcaeb58a97e0",
                 "shasum": ""
             },
             "require": {
@@ -284,7 +284,7 @@
                 "issues": "https://github.com/duyler/framework/issues",
                 "source": "https://github.com/duyler/framework/tree/main"
             },
-            "time": "2024-05-07T08:47:32+00:00"
+            "time": "2024-05-18T08:14:16+00:00"
         },
         {
             "name": "duyler/http",
@@ -1589,20 +1589,20 @@
         },
         {
             "name": "psr/http-factory",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-factory.git",
-                "reference": "e616d01114759c4c489f93b099585439f795fe35"
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/e616d01114759c4c489f93b099585439f795fe35",
-                "reference": "e616d01114759c4c489f93b099585439f795fe35",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0",
+                "php": ">=7.1",
                 "psr/http-message": "^1.0 || ^2.0"
             },
             "type": "library",
@@ -1626,7 +1626,7 @@
                     "homepage": "https://www.php-fig.org/"
                 }
             ],
-            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "description": "PSR-17: Common interfaces for PSR-7 HTTP message factories",
             "keywords": [
                 "factory",
                 "http",
@@ -1638,9 +1638,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-factory/tree/1.0.2"
+                "source": "https://github.com/php-fig/http-factory"
             },
-            "time": "2023-04-10T20:10:41+00:00"
+            "time": "2024-04-15T12:06:14+00:00"
         },
         {
             "name": "psr/http-message",
@@ -2575,16 +2575,16 @@
         },
         {
             "name": "spiral/roadrunner",
-            "version": "v2024.1.1",
+            "version": "v2024.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roadrunner-server/roadrunner.git",
-                "reference": "9d73edf285ec84beb6673d59823aa654b12aefff"
+                "reference": "8e80f7ce055a7c56dedbb6af281ec2531e0c403f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roadrunner-server/roadrunner/zipball/9d73edf285ec84beb6673d59823aa654b12aefff",
-                "reference": "9d73edf285ec84beb6673d59823aa654b12aefff",
+                "url": "https://api.github.com/repos/roadrunner-server/roadrunner/zipball/8e80f7ce055a7c56dedbb6af281ec2531e0c403f",
+                "reference": "8e80f7ce055a7c56dedbb6af281ec2531e0c403f",
                 "shasum": ""
             },
             "type": "metapackage",
@@ -2613,7 +2613,7 @@
                 "docs": "https://roadrunner.dev/docs",
                 "forum": "https://forum.roadrunner.dev/",
                 "issues": "https://github.com/roadrunner-server/roadrunner/issues",
-                "source": "https://github.com/roadrunner-server/roadrunner/tree/v2024.1.1"
+                "source": "https://github.com/roadrunner-server/roadrunner/tree/v2024.1.2"
             },
             "funding": [
                 {
@@ -2621,7 +2621,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-02T16:33:48+00:00"
+            "time": "2024-05-16T19:38:52+00:00"
         },
         {
             "name": "spiral/roadrunner-http",
@@ -3479,6 +3479,70 @@
     ],
     "packages-dev": [
         {
+            "name": "clue/ndjson-react",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clue/reactphp-ndjson.git",
+                "reference": "392dc165fce93b5bb5c637b67e59619223c931b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clue/reactphp-ndjson/zipball/392dc165fce93b5bb5c637b67e59619223c931b0",
+                "reference": "392dc165fce93b5bb5c637b67e59619223c931b0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "react/stream": "^1.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5 || ^5.7 || ^4.8.35",
+                "react/event-loop": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Clue\\React\\NDJson\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering"
+                }
+            ],
+            "description": "Streaming newline-delimited JSON (NDJSON) parser and encoder for ReactPHP.",
+            "homepage": "https://github.com/clue/reactphp-ndjson",
+            "keywords": [
+                "NDJSON",
+                "json",
+                "jsonlines",
+                "newline",
+                "reactphp",
+                "streaming"
+            ],
+            "support": {
+                "issues": "https://github.com/clue/reactphp-ndjson/issues",
+                "source": "https://github.com/clue/reactphp-ndjson/tree/v1.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://clue.engineering/support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-12-23T10:58:28+00:00"
+        },
+        {
             "name": "composer/pcre",
             "version": "3.1.3",
             "source": {
@@ -3697,26 +3761,94 @@
             "time": "2024-05-06T16:37:16+00:00"
         },
         {
-            "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.56.0",
+            "name": "fidry/cpu-core-counter",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "4429303e62a4ce583ddfe64ff5c34c76bcf74931"
+                "url": "https://github.com/theofidry/cpu-core-counter.git",
+                "reference": "f92996c4d5c1a696a6a970e20f7c4216200fcc42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/4429303e62a4ce583ddfe64ff5c34c76bcf74931",
-                "reference": "4429303e62a4ce583ddfe64ff5c34c76bcf74931",
+                "url": "https://api.github.com/repos/theofidry/cpu-core-counter/zipball/f92996c4d5c1a696a6a970e20f7c4216200fcc42",
+                "reference": "f92996c4d5c1a696a6a970e20f7c4216200fcc42",
                 "shasum": ""
             },
             "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "fidry/makefile": "^0.2.0",
+                "fidry/php-cs-fixer-config": "^1.1.2",
+                "phpstan/extension-installer": "^1.2.0",
+                "phpstan/phpstan": "^1.9.2",
+                "phpstan/phpstan-deprecation-rules": "^1.0.0",
+                "phpstan/phpstan-phpunit": "^1.2.2",
+                "phpstan/phpstan-strict-rules": "^1.4.4",
+                "phpunit/phpunit": "^8.5.31 || ^9.5.26",
+                "webmozarts/strict-phpunit": "^7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fidry\\CpuCoreCounter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Théo FIDRY",
+                    "email": "theo.fidry@gmail.com"
+                }
+            ],
+            "description": "Tiny utility to get the number of CPU cores.",
+            "keywords": [
+                "CPU",
+                "core"
+            ],
+            "support": {
+                "issues": "https://github.com/theofidry/cpu-core-counter/issues",
+                "source": "https://github.com/theofidry/cpu-core-counter/tree/1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/theofidry",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-02-07T09:43:46+00:00"
+        },
+        {
+            "name": "friendsofphp/php-cs-fixer",
+            "version": "v3.57.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
+                "reference": "3f7efe667a8c9818aacceee478add7c0fc24cb21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3f7efe667a8c9818aacceee478add7c0fc24cb21",
+                "reference": "3f7efe667a8c9818aacceee478add7c0fc24cb21",
+                "shasum": ""
+            },
+            "require": {
+                "clue/ndjson-react": "^1.0",
                 "composer/semver": "^3.4",
                 "composer/xdebug-handler": "^3.0.3",
                 "ext-filter": "*",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
+                "fidry/cpu-core-counter": "^1.0",
                 "php": "^7.4 || ^8.0",
+                "react/child-process": "^0.6.5",
+                "react/event-loop": "^1.0",
+                "react/promise": "^2.0 || ^3.0",
+                "react/socket": "^1.0",
+                "react/stream": "^1.0",
                 "sebastian/diff": "^4.0 || ^5.0 || ^6.0",
                 "symfony/console": "^5.4 || ^6.0 || ^7.0",
                 "symfony/event-dispatcher": "^5.4 || ^6.0 || ^7.0",
@@ -3779,7 +3911,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.56.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.57.1"
             },
             "funding": [
                 {
@@ -3787,7 +3919,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-07T15:50:05+00:00"
+            "time": "2024-05-15T22:01:07+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -4445,6 +4577,85 @@
                 }
             ],
             "time": "2024-04-24T06:32:35+00:00"
+        },
+        {
+            "name": "react/child-process",
+            "version": "v0.6.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/child-process.git",
+                "reference": "e71eb1aa55f057c7a4a0d08d06b0b0a484bead43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/child-process/zipball/e71eb1aa55f057c7a4a0d08d06b0b0a484bead43",
+                "reference": "e71eb1aa55f057c7a4a0d08d06b0b0a484bead43",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+                "php": ">=5.3.0",
+                "react/event-loop": "^1.2",
+                "react/stream": "^1.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35",
+                "react/socket": "^1.8",
+                "sebastian/environment": "^5.0 || ^3.0 || ^2.0 || ^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\ChildProcess\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
+                }
+            ],
+            "description": "Event-driven library for executing child processes with ReactPHP.",
+            "keywords": [
+                "event-driven",
+                "process",
+                "reactphp"
+            ],
+            "support": {
+                "issues": "https://github.com/reactphp/child-process/issues",
+                "source": "https://github.com/reactphp/child-process/tree/v0.6.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-16T13:41:56+00:00"
         },
         {
             "name": "sebastian/cli-parser",

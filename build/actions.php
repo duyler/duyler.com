@@ -16,7 +16,6 @@ use App\Factory\ContentDtoFactory;
 use App\Provider\MarkdownConverterEnvironmentProvider;
 use Duyler\Framework\Build\Action\Action;
 use Duyler\Http\Http;
-use Duyler\Multiprocess\Build\Attribute\Async;
 use Duyler\Web\Build\Attribute\Route;
 use Duyler\Web\Build\Attribute\View;
 use Duyler\Web\Enum\Method;

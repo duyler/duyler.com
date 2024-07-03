@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Provider;
 
 use App\Config\MarkdownConverterConfig;
+use Duyler\DependencyInjection\ContainerService;
 use League\CommonMark\Environment\Environment;
 use Duyler\DependencyInjection\Provider\AbstractProvider;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
@@ -19,7 +20,7 @@ class MarkdownConverterEnvironmentProvider extends AbstractProvider
         private MarkdownConverterConfig $converterConfig,
     ) {}
 
-    public function getArguments(): array
+    public function getArguments(ContainerService $containerService): array
     {
         return [
             'config' => $this->converterConfig->converterConfig,

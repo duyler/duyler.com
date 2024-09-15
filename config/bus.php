@@ -2,16 +2,12 @@
 
 declare(strict_types=1);
 
-use Duyler\ActionBus\BusConfig;
-use Duyler\ActionBus\Enum\ResetMode;
+use Duyler\EventBus\BusConfig;
 use Duyler\Config\FileConfig;
 
 /**
  * @var FileConfig $config
  */
 return [
-    BusConfig::class => [
-        'saveStateActionContainer' => true,
-        'resetMode' => ResetMode::Selective,
-    ],
+
 ];

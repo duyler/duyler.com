@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Duyler\Config\FileConfig;
-use Duyler\Framework\ApplicationLoader;
+use Duyler\Builder\ApplicationLoader;
 
 /**
  * @var FileConfig $config

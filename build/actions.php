@@ -14,7 +14,7 @@ use App\Contract\Content;
 use App\Dto\ContentDto;
 use App\Factory\ContentDtoFactory;
 use App\Provider\MarkdownConverterEnvironmentProvider;
-use Duyler\Framework\Build\Action\Action;
+use Duyler\Builder\Build\Action\Action;
 use Duyler\Http\Http;
 use Duyler\Web\Build\Attribute\Route;
 use Duyler\Web\Build\Attribute\View;
@@ -36,8 +36,10 @@ Action::build(id: Page::SayHello, handler: function () {})
 
 Action::build(id: Page::GetContentByName, handler: GetContentByNameAction::class)
     ->require(Http::GetRequest, Http::GetRoute)
-    ->bind([EnvironmentInterface::class => Environment::class])
-    ->providers([Environment::class => MarkdownConverterEnvironmentProvider::class])
+    ->config([
+        EnvironmentInterface::class => Environment::class,
+        Environment::class => MarkdownConverterEnvironmentProvider::class,
+    ])
     ->externalAccess(true)
     ->contract(Content::class)
     ->argument(ContentDto::class)

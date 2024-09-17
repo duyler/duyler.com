@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Action;
+namespace App\Handler;
 
 use App\Contract\Content;
 use App\Dto\ContentDto;
@@ -11,7 +11,7 @@ use Duyler\Http\Exception\NotFoundHttpException;
 use Fiber;
 use League\CommonMark\MarkdownConverter;
 
-class GetContentByNameAction
+class GetContentByName
 {
     public function __construct(
         private MarkdownConverter $markdownConverter,

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Action;
+namespace App\Handler;
 
 use App\Contract\GuideMenu;
 
-class GetGuideMenuAction
+class GetGuideMenu
 {
     public function __construct(private GuideMenu $menu) {}
 

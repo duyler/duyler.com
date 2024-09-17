@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use App\Action\GetComponentInfoAction;
 use App\Contract\ComponentInfo;
 use App\Contract\ComponentMenu;
 use App\Contract\GuideMenu;
 use App\Contract\MenuItem;
+use App\Handler\GetComponentInfo;
 use Duyler\Config\FileConfig;
 
 /**
@@ -60,7 +60,7 @@ return [
             ),
         ],
     ],
-    GetComponentInfoAction::class => [
+    GetComponentInfo::class => [
         'componentInfoList' => [
             'event-bus' => new ComponentInfo(
                 'https://github.com/duyler/event-bus',

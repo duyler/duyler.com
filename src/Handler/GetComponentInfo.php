@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Action;
+namespace App\Handler;
 
 use App\Contract\ComponentInfo;
 use App\Contract\Content;
 
-class GetComponentInfoAction
+class GetComponentInfo
 {
     public function __construct(
         /** @var array<string, ComponentInfo> */

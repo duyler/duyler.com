@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Case\Page;
+use App\Action\Page;
 use App\Controller\PageController;
 use Duyler\Router\Enum\Type;
 use Duyler\Web\Build\Attribute\Route;

@@ -23,7 +23,6 @@ use League\CommonMark\Environment\Environment;
 use League\CommonMark\Environment\EnvironmentInterface;
 
 Action::build(id: Page::SayHello, handler: function () {})
-    ->externalAccess(true)
     ->attributes(
         new Route(
             method: Method::Get,
@@ -40,21 +39,17 @@ Action::build(id: Page::GetContentByName, handler: GetContentByName::class)
         EnvironmentInterface::class => Environment::class,
         Environment::class => MarkdownConverterEnvironmentProvider::class,
     ])
-    ->externalAccess(true)
     ->contract(Content::class)
     ->argument(ContentDto::class)
     ->argumentFactory(ContentDtoFactory::class);
 
 Action::build(id: Page::GetComponentMenu, handler: GetComponentMenu::class)
-    ->externalAccess(true)
     ->contract(ComponentMenu::class);
 
 Action::build(id: Page::GetGuideMenu, handler: GetGuideMenu::class)
-    ->externalAccess(true)
     ->contract(GuideMenu::class);
 
 Action::build(id: Page::GetComponentInfo, handler: GetComponentInfo::class)
     ->require(Page::GetContentByName)
-    ->externalAccess(true)
     ->argument(Content::class)
     ->contract(ComponentInfo::class);

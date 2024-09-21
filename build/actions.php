@@ -23,6 +23,7 @@ use Duyler\Web\Enum\HttpMethod;
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Environment\EnvironmentInterface;
 use League\CommonMark\MarkdownConverter;
+use League\CommonMark\Output\RenderedContentInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 Action::build(id: Page::SayHello, handler: function () {})
@@ -42,14 +43,16 @@ Action::build(
             /** @var ContentDto $contentDto */
             $contentDto = $context->argument();
 
+            /** @var string $markdown */
             $markdown = $context->call(
-                fn(DocsStorage $docsStorage) => $docsStorage->getPage($contentDto->getSlug())
+                fn (DocsStorage $docsStorage) => $docsStorage->getPage($contentDto->getSlug())
             );
 
             if (null === $markdown) {
                 throw new NotFoundHttpException();
             }
 
+            /** @var RenderedContentInterface $html */
             $html = $context->call(
                 fn (MarkdownConverter $markdownConverter) => $markdownConverter->convert($markdown)
             );

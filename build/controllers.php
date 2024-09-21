@@ -3,22 +3,23 @@
 declare(strict_types=1);
 
 use App\Action\Page;
-use App\Controller\PageController;
 use Duyler\Router\Enum\Type;
 use Duyler\Web\Build\Attribute\Route;
 use Duyler\Web\Build\Controller;
-use Duyler\Web\Enum\Method;
+use Duyler\Web\Context;
+use Duyler\Web\Enum\HttpMethod;
 
-Controller::build(handler: PageController::class)
+Controller::build(
+        handler: function (Context $context) {
+            return $context->render('docs.page');
+        }
+    )
     ->actions(
-        Page::GetComponentInfo,
         Page::GetContentByName,
-        Page::GetComponentMenu,
-        Page::GetGuideMenu,
     )
     ->attributes(
         new Route(
-            method: Method::Get,
+            method: HttpMethod::Get,
             pattern: '{$page}',
             where: ['page' => Type::Array],
         ),

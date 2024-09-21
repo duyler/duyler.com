@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
+use App\Config\ComponentInfoList;
 use App\Contract\ComponentInfo;
 use App\Contract\ComponentMenu;
 use App\Contract\GuideMenu;
 use App\Contract\MenuItem;
-use App\Handler\GetComponentInfo;
 use Duyler\Config\FileConfig;
 
 /**
@@ -18,17 +18,14 @@ return [
             new MenuItem(
                 name: 'Event Bus',
                 id: 'event-bus',
-                icon: 'bi bi-arrow-repeat',
             ),
             new MenuItem(
                 name: 'DI',
                 id: 'di',
-                icon: 'bi bi-boxes',
             ),
             new MenuItem(
                 name: 'Web',
                 id: 'web',
-                icon: 'bi bi-browser-safari',
             ),
         ],
     ],
@@ -60,8 +57,8 @@ return [
             ),
         ],
     ],
-    GetComponentInfo::class => [
-        'componentInfoList' => [
+    ComponentInfoList::class => [
+        'list' => [
             'event-bus' => new ComponentInfo(
                 'https://github.com/duyler/event-bus',
             ),

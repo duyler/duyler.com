@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace App\Provider;
 
 use App\Config\MarkdownConverterConfig;
-use Duyler\DependencyInjection\ContainerService;
+use Duyler\DI\ContainerService;
 use League\CommonMark\Environment\Environment;
-use Duyler\DependencyInjection\Provider\AbstractProvider;
+use Duyler\DI\Provider\AbstractProvider;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
 use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
 use League\CommonMark\Extension\CommonMark\Node\Block\IndentedCode;

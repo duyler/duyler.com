@@ -14,8 +14,9 @@ use App\Storage\DocsStorage;
 use Duyler\Builder\Build\Action\Action;
 use Duyler\EventBus\Action\Context\ActionContext;
 use Duyler\EventBus\Action\Context\FactoryContext;
+use Duyler\Http\Action\Request;
+use Duyler\Http\Action\Router;
 use Duyler\Http\Exception\NotFoundHttpException;
-use Duyler\Http\Http;
 use Duyler\Router\CurrentRoute;
 use Duyler\Web\Build\Attribute\Route;
 use Duyler\Web\Build\Attribute\View;
@@ -67,7 +68,7 @@ Action::build(
             );
         }
     )
-    ->require(Http::GetRequest, Http::GetRoute)
+    ->require(Request::GetRequest, Router::GetRoute)
     ->config([
         EnvironmentInterface::class => Environment::class,
         Environment::class => MarkdownConverterEnvironmentProvider::class,

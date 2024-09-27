@@ -87,17 +87,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/builder.git",
-                "reference": "10c0bba1ffc07e11a51da62aa703e4e516eaa232"
+                "reference": "0c2cf4b7ce0bd5edcf183ebd1ed7e2428e541f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/builder/zipball/10c0bba1ffc07e11a51da62aa703e4e516eaa232",
-                "reference": "10c0bba1ffc07e11a51da62aa703e4e516eaa232",
+                "url": "https://api.github.com/repos/duyler/builder/zipball/0c2cf4b7ce0bd5edcf183ebd1ed7e2428e541f7a",
+                "reference": "0c2cf4b7ce0bd5edcf183ebd1ed7e2428e541f7a",
                 "shasum": ""
             },
             "require": {
                 "duyler/config": "dev-main",
-                "duyler/dependency-injection": "dev-main",
+                "duyler/di": "dev-main",
                 "duyler/event-bus": "dev-main",
                 "php": "^8.3",
                 "vlucas/phpdotenv": "^v5.6"
@@ -132,7 +132,7 @@
                 "issues": "https://github.com/duyler/builder/issues",
                 "source": "https://github.com/duyler/builder/tree/main"
             },
-            "time": "2024-09-21T08:10:10+00:00"
+            "time": "2024-09-25T05:19:59+00:00"
         },
         {
             "name": "duyler/config",
@@ -140,12 +140,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/config.git",
-                "reference": "3f0dc8543638c7339ee55e2002d943203f5d9637"
+                "reference": "60dee9833c04b1c11d60b440f75db255f8d2c6db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/config/zipball/3f0dc8543638c7339ee55e2002d943203f5d9637",
-                "reference": "3f0dc8543638c7339ee55e2002d943203f5d9637",
+                "url": "https://api.github.com/repos/duyler/config/zipball/60dee9833c04b1c11d60b440f75db255f8d2c6db",
+                "reference": "60dee9833c04b1c11d60b440f75db255f8d2c6db",
                 "shasum": ""
             },
             "require": {
@@ -181,20 +181,20 @@
                 "issues": "https://github.com/duyler/config/issues",
                 "source": "https://github.com/duyler/config/tree/main"
             },
-            "time": "2024-02-11T11:35:07+00:00"
+            "time": "2024-09-25T05:26:05+00:00"
         },
         {
-            "name": "duyler/dependency-injection",
+            "name": "duyler/di",
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/duyler/dependency-injection.git",
-                "reference": "4cfbbdbbbdc22b3473ecd5b5d465983284a7d47e"
+                "url": "https://github.com/duyler/di.git",
+                "reference": "786d4cc96bf12a7366a624e50914bcbc42021601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/dependency-injection/zipball/4cfbbdbbbdc22b3473ecd5b5d465983284a7d47e",
-                "reference": "4cfbbdbbbdc22b3473ecd5b5d465983284a7d47e",
+                "url": "https://api.github.com/repos/duyler/di/zipball/786d4cc96bf12a7366a624e50914bcbc42021601",
+                "reference": "786d4cc96bf12a7366a624e50914bcbc42021601",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +209,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Duyler\\DependencyInjection\\": "src/"
+                    "Duyler\\DI\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -228,10 +228,10 @@
                 "di"
             ],
             "support": {
-                "issues": "https://github.com/duyler/dependency-injection/issues",
-                "source": "https://github.com/duyler/dependency-injection/tree/main"
+                "issues": "https://github.com/duyler/di/issues",
+                "source": "https://github.com/duyler/di/tree/main"
             },
-            "time": "2024-08-03T07:49:23+00:00"
+            "time": "2024-09-24T23:34:41+00:00"
         },
         {
             "name": "duyler/event-bus",
@@ -239,16 +239,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/event-bus.git",
-                "reference": "ab56166c8daea20336876c80a1f8eee3868c3717"
+                "reference": "1ddaebb46576a986ecc41fc89dd85c858240b2b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/event-bus/zipball/ab56166c8daea20336876c80a1f8eee3868c3717",
-                "reference": "ab56166c8daea20336876c80a1f8eee3868c3717",
+                "url": "https://api.github.com/repos/duyler/event-bus/zipball/1ddaebb46576a986ecc41fc89dd85c858240b2b2",
+                "reference": "1ddaebb46576a986ecc41fc89dd85c858240b2b2",
                 "shasum": ""
             },
             "require": {
-                "duyler/dependency-injection": "dev-main",
+                "duyler/di": "dev-main",
                 "php": "^8.3",
                 "psr/event-dispatcher": "^1.0.0"
             },
@@ -284,7 +284,7 @@
                 "issues": "https://github.com/duyler/event-bus/issues",
                 "source": "https://github.com/duyler/event-bus/tree/main"
             },
-            "time": "2024-09-21T11:39:01+00:00"
+            "time": "2024-09-26T03:48:29+00:00"
         },
         {
             "name": "duyler/http",
@@ -292,12 +292,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/http.git",
-                "reference": "64c75b1aa32921a0d86f0d38a11c05292285fb1b"
+                "reference": "1af9e6b3a918f7871f407db71a02f976dc4d030a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/http/zipball/64c75b1aa32921a0d86f0d38a11c05292285fb1b",
-                "reference": "64c75b1aa32921a0d86f0d38a11c05292285fb1b",
+                "url": "https://api.github.com/repos/duyler/http/zipball/1af9e6b3a918f7871f407db71a02f976dc4d030a",
+                "reference": "1af9e6b3a918f7871f407db71a02f976dc4d030a",
                 "shasum": ""
             },
             "require": {
@@ -336,7 +336,7 @@
                 "issues": "https://github.com/duyler/http/issues",
                 "source": "https://github.com/duyler/http/tree/main"
             },
-            "time": "2024-09-21T11:42:54+00:00"
+            "time": "2024-09-26T06:47:26+00:00"
         },
         {
             "name": "duyler/multiprocess",
@@ -344,17 +344,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/multiprocess.git",
-                "reference": "beda97000a822c2dfcc14f18ee9264a14a141a33"
+                "reference": "614027f5c71294e4d81d1e7069ea70ca744f2eeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/multiprocess/zipball/beda97000a822c2dfcc14f18ee9264a14a141a33",
-                "reference": "beda97000a822c2dfcc14f18ee9264a14a141a33",
+                "url": "https://api.github.com/repos/duyler/multiprocess/zipball/614027f5c71294e4d81d1e7069ea70ca744f2eeb",
+                "reference": "614027f5c71294e4d81d1e7069ea70ca744f2eeb",
                 "shasum": ""
             },
             "require": {
                 "duyler/builder": "dev-main",
-                "duyler/dependency-injection": "dev-main",
+                "duyler/di": "dev-main",
                 "duyler/event-bus": "dev-main",
                 "php": "^8.3"
             },
@@ -390,7 +390,7 @@
                 "issues": "https://github.com/duyler/multiprocess/issues",
                 "source": "https://github.com/duyler/multiprocess/tree/main"
             },
-            "time": "2024-09-08T13:36:24+00:00"
+            "time": "2024-09-25T00:42:31+00:00"
         },
         {
             "name": "duyler/router",
@@ -447,12 +447,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/twig-wrapper.git",
-                "reference": "0551ba44f0abf0bfb2ce78fa0289c188181713a8"
+                "reference": "93da315a7fe4d046273d6e52b8067a2a445880dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/twig-wrapper/zipball/0551ba44f0abf0bfb2ce78fa0289c188181713a8",
-                "reference": "0551ba44f0abf0bfb2ce78fa0289c188181713a8",
+                "url": "https://api.github.com/repos/duyler/twig-wrapper/zipball/93da315a7fe4d046273d6e52b8067a2a445880dd",
+                "reference": "93da315a7fe4d046273d6e52b8067a2a445880dd",
                 "shasum": ""
             },
             "require": {
@@ -490,7 +490,7 @@
                 "issues": "https://github.com/duyler/twig-wrapper/issues",
                 "source": "https://github.com/duyler/twig-wrapper/tree/main"
             },
-            "time": "2024-02-11T11:37:27+00:00"
+            "time": "2024-09-24T02:58:04+00:00"
         },
         {
             "name": "duyler/web",
@@ -498,12 +498,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/web.git",
-                "reference": "3a9e0dcc3e10769e4653b8c215236d3041bb758f"
+                "reference": "c1d7de9ca936fef677baa6c02df0faf0150233f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/web/zipball/3a9e0dcc3e10769e4653b8c215236d3041bb758f",
-                "reference": "3a9e0dcc3e10769e4653b8c215236d3041bb758f",
+                "url": "https://api.github.com/repos/duyler/web/zipball/c1d7de9ca936fef677baa6c02df0faf0150233f8",
+                "reference": "c1d7de9ca936fef677baa6c02df0faf0150233f8",
                 "shasum": ""
             },
             "require": {
@@ -543,7 +543,7 @@
                 "issues": "https://github.com/duyler/web/issues",
                 "source": "https://github.com/duyler/web/tree/main"
             },
-            "time": "2024-09-21T01:58:44+00:00"
+            "time": "2024-09-26T06:41:41+00:00"
         },
         {
             "name": "evenement/evenement",

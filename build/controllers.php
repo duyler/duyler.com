@@ -6,7 +6,7 @@ use App\Action\Page;
 use Duyler\Router\Enum\Type;
 use Duyler\Web\Build\Attribute\Route;
 use Duyler\Web\Build\Controller;
-use Duyler\Web\Context;
+use Duyler\Web\Controller\Context;
 use Duyler\Web\Enum\HttpMethod;
 
 Controller::build(

@@ -23,10 +23,6 @@ return [
                 name: 'DI',
                 id: 'di',
             ),
-            new MenuItem(
-                name: 'Web',
-                id: 'web',
-            ),
         ],
     ],
     GuideMenu::class => [
@@ -36,16 +32,24 @@ return [
                 id: 'get-started',
             ),
             new MenuItem(
+                name: 'Configuration',
+                id: 'configuration',
+            ),
+            new MenuItem(
                 name: 'Actions',
                 id: 'actions',
             ),
             new MenuItem(
-                name: 'Attributes',
-                id: 'attributes',
+                name: 'Events',
+                id: 'events',
             ),
             new MenuItem(
                 name: 'Controllers',
                 id: 'controllers',
+            ),
+            new MenuItem(
+                name: 'Attributes',
+                id: 'attributes',
             ),
             new MenuItem(
                 name: 'State handling',
@@ -54,6 +58,10 @@ return [
             new MenuItem(
                 name: 'AOP',
                 id: 'aop',
+            ),
+            new MenuItem(
+                name: 'Database',
+                id: 'database',
             ),
         ],
     ],

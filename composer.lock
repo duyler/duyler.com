@@ -239,12 +239,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/event-bus.git",
-                "reference": "1ddaebb46576a986ecc41fc89dd85c858240b2b2"
+                "reference": "eb0a34241b3f6cc6272d698fae640ca729a6ad8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/event-bus/zipball/1ddaebb46576a986ecc41fc89dd85c858240b2b2",
-                "reference": "1ddaebb46576a986ecc41fc89dd85c858240b2b2",
+                "url": "https://api.github.com/repos/duyler/event-bus/zipball/eb0a34241b3f6cc6272d698fae640ca729a6ad8f",
+                "reference": "eb0a34241b3f6cc6272d698fae640ca729a6ad8f",
                 "shasum": ""
             },
             "require": {
@@ -284,7 +284,7 @@
                 "issues": "https://github.com/duyler/event-bus/issues",
                 "source": "https://github.com/duyler/event-bus/tree/main"
             },
-            "time": "2024-09-26T03:48:29+00:00"
+            "time": "2024-09-28T10:49:49+00:00"
         },
         {
             "name": "duyler/http",
@@ -292,12 +292,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/duyler/http.git",
-                "reference": "1af9e6b3a918f7871f407db71a02f976dc4d030a"
+                "reference": "2334c5b2e64e5e82f2ee7605d46bbf7306c30335"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/duyler/http/zipball/1af9e6b3a918f7871f407db71a02f976dc4d030a",
-                "reference": "1af9e6b3a918f7871f407db71a02f976dc4d030a",
+                "url": "https://api.github.com/repos/duyler/http/zipball/2334c5b2e64e5e82f2ee7605d46bbf7306c30335",
+                "reference": "2334c5b2e64e5e82f2ee7605d46bbf7306c30335",
                 "shasum": ""
             },
             "require": {
@@ -336,7 +336,7 @@
                 "issues": "https://github.com/duyler/http/issues",
                 "source": "https://github.com/duyler/http/tree/main"
             },
-            "time": "2024-09-26T06:47:26+00:00"
+            "time": "2024-09-29T03:37:08+00:00"
         },
         {
             "name": "duyler/multiprocess",

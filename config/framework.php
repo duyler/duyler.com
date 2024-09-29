@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+use App\ErrorHandler\InternalServerErrorHandler;
+use App\ErrorHandler\NotFoundErrorHandler;
 use Duyler\Config\FileConfig;
 use Duyler\Builder\ApplicationLoader;
+use Duyler\Http\ErrorHandler\ErrorHandlerConfig;
 
 /**
  * @var FileConfig $config
@@ -16,4 +19,10 @@ return [
             \Duyler\Multiprocess\Loader::class,
         ],
     ],
+    ErrorHandlerConfig::class => [
+        'errorHandlers' => [
+            NotFoundErrorHandler::class,
+            InternalServerErrorHandler::class,
+        ],
+    ]
 ];

@@ -16,3 +16,6 @@ http:
     key: server.key
     root_ca: root.crt
     client_auth_type: no_client_certs
+
+  pool:
+    num_workers: 2

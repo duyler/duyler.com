@@ -44,6 +44,10 @@ return [
                 id: 'events',
             ),
             new MenuItem(
+                name: 'Triggers',
+                id: 'triggers',
+            ),
+            new MenuItem(
                 name: 'Controllers',
                 id: 'controllers',
             ),

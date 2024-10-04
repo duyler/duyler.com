@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Storage;
 
 use App\Config\DocsStorageConfig;
+use Fiber;
 
 /**
  * @todo Need ttl
@@ -23,7 +24,8 @@ class DocsStorage
             return $this->pages[$slug];
         }
 
-        $page = file_get_contents($this->actionConfig->pagesPath . $slug . '.md');
+        $url = $this->actionConfig->pagesPath . $slug . '.md';
+        $page = Fiber::suspend(fn () => file_get_contents($url));
 
         if (false === $page) {
             return null;

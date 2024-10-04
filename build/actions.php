@@ -17,7 +17,9 @@ use Duyler\EventBus\Action\Context\FactoryContext;
 use Duyler\Http\Action\Request;
 use Duyler\Http\Action\Router;
 use Duyler\Http\Exception\NotFoundHttpException;
+use Duyler\Multiprocess\Build\Attribute\Async;
 use Duyler\Router\CurrentRoute;
+use Duyler\Router\Enum\Type;
 use Duyler\Web\Build\Attribute\Route;
 use Duyler\Web\Build\Attribute\View;
 use Duyler\Web\Enum\HttpMethod;
@@ -27,7 +29,7 @@ use League\CommonMark\MarkdownConverter;
 use League\CommonMark\Output\RenderedContentInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-Action::build(id: Page::SayHello, handler: function () {})
+Action::create()
     ->attributes(
         new Route(
             method: HttpMethod::Get,
@@ -38,9 +40,27 @@ Action::build(id: Page::SayHello, handler: function () {})
         ),
     );
 
-Action::build(
-        id: Page::GetContentByName,
-        handler: function (ActionContext $context) {
+Action::create()
+    ->triggerFor(
+        Page::GetContentByName,
+        Page::GetComponentMenu,
+        Page::GetGuideMenu,
+        Page::GetComponentInfo,
+    )
+    ->attributes(
+        new Route(
+            method: HttpMethod::Get,
+            pattern: '{$page}',
+            where: ['page' => Type::Array],
+        ),
+        new View(
+            name: 'docs.page',
+        ),
+    );
+
+Action::create(Page::GetContentByName)
+    ->handler(
+        function (ActionContext $context) {
             /** @var ContentDto $contentDto */
             $contentDto = $context->argument();
 
@@ -92,12 +112,11 @@ Action::build(
         new View(
             key: 'page',
         ),
+        new Async(),
     );
 
-Action::build(
-        id: Page::GetComponentMenu,
-        handler: fn (ActionContext $context) => $context->call(fn (ComponentMenu $menu) => $menu),
-    )
+Action::create(Page::GetComponentMenu)
+    ->handler(fn (ActionContext $context) => $context->call(fn (ComponentMenu $menu) => $menu))
     ->contract(ComponentMenu::class)
     ->attributes(
         new View(
@@ -105,10 +124,8 @@ Action::build(
         ),
     );
 
-Action::build(
-        id: Page::GetGuideMenu,
-        handler: fn (ActionContext $context) => $context->call(fn (GuideMenu $menu) => $menu),
-    )
+Action::create(Page::GetGuideMenu)
+    ->handler(fn (ActionContext $context) => $context->call(fn (GuideMenu $menu) => $menu))
     ->contract(GuideMenu::class)
     ->attributes(
         new View(
@@ -116,9 +133,9 @@ Action::build(
         ),
     );
 
-Action::build(
-        id: Page::GetComponentInfo,
-        handler: function (ActionContext $context) {
+Action::create(Page::GetComponentInfo)
+    ->handler(
+        function (ActionContext $context) {
             /** @var Content $page */
             $page = $context->argument();
             return $context->call(

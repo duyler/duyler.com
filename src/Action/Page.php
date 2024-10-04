@@ -6,7 +6,6 @@ namespace App\Action;
 
 enum Page
 {
-    case SayHello;
     case GetContentByName;
     case GetComponentMenu;
     case GetGuideMenu;

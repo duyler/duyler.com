@@ -12,10 +12,18 @@ http:
   ssl:
     address: 0.0.0.0:443
     redirect: true
-    cert: server.crt
-    key: server.key
-    root_ca: root.crt
-    client_auth_type: no_client_certs
+    cert: certificate.crt
+    key: certificate.key
+    root_ca: certificate_ca.crt
 
   pool:
     num_workers: 2
+    debug: false
+
+rpc:
+  listen: tcp://127.0.0.1:6001
+
+kv:
+  memory:
+    driver: memory
+    config: { }

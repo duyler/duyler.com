@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace App\ErrorHandler;
 
-use Duyler\Http\ErrorHandler\Error;
+use Duyler\EventBus\Dto\Log;
 use Duyler\Http\ErrorHandler\ErrorHandlerInterface;
 use Duyler\Http\Exception\NotFoundHttpException;
 use Duyler\Web\Renderer\RendererInterface;
+use HttpSoft\Response\HtmlResponse;
 use Override;
+use Psr\Http\Message\ResponseInterface;
 use Throwable;
 
 class NotFoundErrorHandler implements ErrorHandlerInterface
@@ -18,12 +20,9 @@ class NotFoundErrorHandler implements ErrorHandlerInterface
     ) {}
 
     #[Override]
-    public function handle(Throwable $exception): Error
+    public function handle(Throwable $exception, Log $log): ResponseInterface
     {
-        return new Error(
-            content: $this->renderer->render('404'),
-            status: 404,
-        );
+        return new HtmlResponse($this->renderer->render('404'), 404);
     }
 
     #[Override]

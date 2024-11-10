@@ -13,7 +13,6 @@
     "prefer-stable": true,
     "require": {
         "php": ">=8.3",
-        "ext-parallel": "*",
         "duyler/builder": "dev-main",
         "duyler/http": "dev-main",
         "duyler/web": "dev-main",
@@ -22,7 +21,8 @@
         "react/http": "^1.9.0",
         "league/commonmark": "^2.4",
         "spatie/commonmark-highlighter": "^3.0",
-        "duyler/multiprocess": "dev-main"
+        "duyler/io": "dev-main",
+        "spiral/roadrunner-kv": "^4.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.0",

@@ -5,32 +5,37 @@ declare(strict_types=1);
 namespace App\Storage;
 
 use App\Config\DocsStorageConfig;
-use Fiber;
+use DateInterval;
+use Duyler\IO\Async\Http\HttpRequest;
+use GuzzleHttp\RequestOptions;
+use Spiral\RoadRunner\KeyValue\StorageInterface;
 
-/**
- * @todo Need ttl
- */
-class DocsStorage
+final class DocsStorage
 {
-    private array $pages = [];
-
     public function __construct(
         private DocsStorageConfig $actionConfig,
+        private StorageInterface $storage,
     ) {}
 
     public function getPage(string $slug): ?string
     {
-        if (isset($this->pages[$slug])) {
-            return $this->pages[$slug];
+        if ($this->storage->has($slug)) {
+            return $this->storage->get($slug);
         }
 
         $url = $this->actionConfig->pagesPath . $slug . '.md';
-        $page = Fiber::suspend(fn () => file_get_contents($url));
+        $response = HttpRequest::get($url)
+            ->setOptions([RequestOptions::HTTP_ERRORS => false])
+            ->send()
+            ->await();
 
-        if (false === $page) {
+        if (200 < $response->getStatusCode()) {
             return null;
         }
 
-        return $this->pages[$slug] = $page;
+        $content = $response->getBody()->getContents();
+
+        $this->storage->set($slug, $content, DateInterval::createFromDateString('1 day'));
+        return $content;
     }
 }

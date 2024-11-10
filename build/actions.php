@@ -9,6 +9,7 @@ use App\Contract\ComponentMenu;
 use App\Contract\Content;
 use App\Contract\GuideMenu;
 use App\Dto\ContentDto;
+use App\Provider\DocsStorageProvider;
 use App\Provider\MarkdownConverterEnvironmentProvider;
 use App\Storage\DocsStorage;
 use Duyler\Builder\Build\Action\Action;
@@ -17,7 +18,6 @@ use Duyler\EventBus\Action\Context\FactoryContext;
 use Duyler\Http\Action\Request;
 use Duyler\Http\Action\Router;
 use Duyler\Http\Exception\NotFoundHttpException;
-use Duyler\Multiprocess\Build\Attribute\Async;
 use Duyler\Router\CurrentRoute;
 use Duyler\Router\Enum\Type;
 use Duyler\Web\Build\Attribute\Route;
@@ -92,6 +92,7 @@ Action::create(Page::GetContentByName)
     ->config([
         EnvironmentInterface::class => Environment::class,
         Environment::class => MarkdownConverterEnvironmentProvider::class,
+        DocsStorage::class => DocsStorageProvider::class,
     ])
     ->contract(Content::class)
     ->argument(ContentDto::class)
@@ -112,7 +113,6 @@ Action::create(Page::GetContentByName)
         new View(
             key: 'page',
         ),
-        new Async(),
     );
 
 Action::create(Page::GetComponentMenu)

@@ -6,5 +6,7 @@ namespace App\Config;
 
 readonly class DocsStorageConfig
 {
-    public function __construct(public string $pagesPath) {}
+    public function __construct(
+        public string $pagesPath,
+    ) {}
 }

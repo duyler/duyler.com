@@ -67,6 +67,10 @@ return [
                 name: 'Database',
                 id: 'database',
             ),
+            new MenuItem(
+                name: 'Async',
+                id: 'async',
+            ),
         ],
     ],
     ComponentInfoList::class => [
